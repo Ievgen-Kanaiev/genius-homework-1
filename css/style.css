@@ -1,3 +1,58 @@
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/play-v19-latin-regular.eot");
+  src: url("../fonts/play-v19-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/play-v19-latin-regular.woff2") format("woff2"),
+    url("../fonts/play-v19-latin-regular.woff") format("woff"),
+    url("../fonts/play-v19-latin-regular.ttf") format("truetype"),
+    url("../fonts/play-v19-latin-regular.svg#Play") format("svg");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/play-v19-latin-700.eot");
+  src: url("../fonts/play-v19-latin-700.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/play-v19-latin-700.woff2") format("woff2"),
+    url("../fonts/play-v19-latin-700.woff") format("woff"),
+    url("../fonts/play-v19-latin-700.ttf") format("truetype"),
+    url("../fonts/play-v19-latin-700.svg#Play") format("svg");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-latin-regular.eot");
+  src: url("../fonts/roboto-v30-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"),
+    url("../fonts/roboto-v30-latin-regular.woff") format("woff"),
+    url("../fonts/roboto-v30-latin-regular.ttf") format("truetype"),
+    url("../fonts/roboto-v30-latin-regular.svg#Roboto") format("svg");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v30-latin-500.eot");
+  src: url("../fonts/roboto-v30-latin-500.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/roboto-v30-latin-500.woff2") format("woff2"),
+    url("../fonts/roboto-v30-latin-500.woff") format("woff"),
+    url("../fonts/roboto-v30-latin-500.ttf") format("truetype"),
+    url("../fonts/roboto-v30-latin-500.svg#Roboto") format("svg");
+}
+
 :root {
   --color-primary-light: #ffffff;
   --color-primary-middle: #2b7fff;
@@ -11,6 +66,10 @@
 /* Base */
 body {
   color: var(--color-primary-dark);
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
 }
 ul {
   list-style-type: none;
@@ -18,26 +77,135 @@ ul {
 
 /* button */
 .MainButton {
+  line-height: 1.17;
+  font-size: 18px;
+  font-weight: 600;
   color: var(--color-primary-dark);
   background-color: transparent;
   border: 2px solid var(--color-primary-middle);
   border-radius: 32px;
   cursor: pointer;
 }
-.MainButton:active {
+.MainButton:hover {
   color: var(--color-primary-light);
   background-color: var(--color-primary-middle);
 }
+
 /* links */
 .link {
   color: var(--color-primary-dark);
+  text-decoration: none;
 }
 .link:hover {
   color: var(--color-primary-middle);
+  font-weight: 700;
 }
+
+/* Main section */
+
 .Hero-tytle {
+  font-family: Play, sans-serif;
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 0.82;
   color: var(--color-primary-middle);
 }
-.section-title .accent {
+
+.adition-info {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.section-title {
+  font-family: Play, sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.16;
+}
+
+/* Whay we */
+.section-title span {
   color: var(--color-primary-middle);
+}
+
+.section-title .accent-en {
+  text-transform: capitalize;
+}
+
+.info {
+  font-size: 22px;
+}
+
+.info span {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* Секція чому */
+
+.section {
+  line-height: 1.33;
+  text-align: center;
+
+  /* Секція location */
+}
+
+.signed {
+  color: var(--color-primary-light);
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+}
+
+.signed span {
+  color: var(--color-primary-middle);
+}
+
+.SecondButton {
+  line-height: 1.17;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  background-color: transparent;
+  border: 2px solid var(--color-primary-middle);
+  border-radius: 32px;
+  cursor: pointer;
+}
+.SecondButton:hover {
+  color: var(--color-primary-light);
+  background-color: var(--color-primary-middle);
+}
+.confidential {
+  color: var(--color-secondary-middle);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.confidential:hover {
+  color: var(--color-secondary-middle);
+}
+
+/* footer */
+.footer-link {
+  color: var(--color-primary-light);
+  text-decoration: none;
+}
+.footer-link:hover {
+  color: var(--color-primary-middle);
+}
+
+.addres-link {
+  color: var(--color-primary-light);
+  font-size: 16px;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.addres-link:hover {
+  color: var(--color-primary-middle);
+}
+.copyryght {
+  color: var(--color-secondary-middle);
+  font-size: 13px;
 }
