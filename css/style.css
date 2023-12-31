@@ -63,6 +63,7 @@
   --color-secondary-yellow: #ffd02b;
   --color-effect-1: #a8c6f5;
 }
+
 /* Base */
 body {
   color: var(--color-primary-dark);
@@ -70,9 +71,37 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.17;
+  margin: 0;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
 ul {
   list-style-type: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 /* button */
@@ -86,6 +115,7 @@ ul {
   border-radius: 32px;
   cursor: pointer;
 }
+
 .MainButton:hover {
   color: var(--color-primary-light);
   background-color: var(--color-primary-middle);
@@ -96,6 +126,7 @@ ul {
   color: var(--color-primary-dark);
   text-decoration: none;
 }
+
 .link:hover {
   color: var(--color-primary-middle);
   font-weight: 700;
@@ -109,6 +140,7 @@ ul {
   font-weight: 700;
   line-height: 0.82;
   color: var(--color-primary-middle);
+  padding: 160.12px 666.95px 269.81px 244px;
 }
 
 .adition-info {
@@ -117,19 +149,16 @@ ul {
   text-align: center;
 }
 
-.section-title {
+/* Перевтілюйтесь в beauty zone! */
+.title-section-two {
   font-family: Play, sans-serif;
   font-weight: 700;
   font-size: 64px;
   line-height: 1.16;
 }
 
-/* Whay we */
-.section-title span {
+.title-section-two span {
   color: var(--color-primary-middle);
-}
-
-.section-title .accent-en {
   text-transform: capitalize;
 }
 
@@ -142,14 +171,36 @@ ul {
   text-transform: capitalize;
 }
 
-/* Секція чому */
+/* Чому люди обирають нас */
+.title-section-three-to-five {
+  font-family: Play, sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.16;
+}
+
+.title-section-three-to-five span {
+  color: var(--color-primary-middle);
+}
+
+.whay {
+  line-height: 1.33;
+}
 
 .section {
-  line-height: 1.33;
-  text-align: center;
-
-  /* Секція location */
+  padding: 46px 0;
 }
+
+.about-us {
+  padding-top: 39.66px;
+}
+/* Наші процедури */
+
+.procedures {
+  line-height: 1.18;
+}
+
+/* Як нас знайти */
 
 .signed {
   color: var(--color-primary-light);
@@ -157,6 +208,8 @@ ul {
   font-size: 22px;
   text-align: center;
 }
+
+/* Запишіться */
 
 .signed span {
   color: var(--color-primary-middle);
@@ -187,10 +240,12 @@ ul {
 }
 
 /* footer */
+
 .footer-link {
   color: var(--color-primary-light);
   text-decoration: none;
 }
+
 .footer-link:hover {
   color: var(--color-primary-middle);
 }
